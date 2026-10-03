@@ -15,7 +15,8 @@ resources = [
         "hours": "24/7",
         "contact": "01 671 5551",
         "description": "Emergency shelter and support services",
-        "source": "verified"
+        "source": "verified",
+        "openNow": True,
     },
     {
         "name": "Merchants Quay Ireland",
@@ -24,7 +25,8 @@ resources = [
         "hours": "Mon-Fri 10am-2pm",
         "contact": "01 524 0139",
         "description": "Day centre, meals, and health services",
-        "source": "verified"
+        "source": "verified",
+        "openNow": True,
     },
     {
         "name": "Capuchin Day Centre",
@@ -33,7 +35,8 @@ resources = [
         "hours": "Mon-Sat 8am-11am",
         "contact": "01 872 4411",
         "description": "Free breakfast and food parcels",
-        "source": "verified"
+        "source": "verified",
+        "openNow": True,
     },
         {
         "name": "Dublin Simon Community",
@@ -42,7 +45,8 @@ resources = [
         "hours": "24/7",
         "contact": "01 671 5551",
         "description": "Emergency shelter and support services",
-        "source": "verified"
+        "source": "verified",
+        "openNow": True,
     },
 
     {
@@ -52,7 +56,8 @@ resources = [
         "hours": "Mon-Fri 10am-2pm",
         "contact": "01 524 0139",
         "description": "Day centre, meals, and health services",
-        "source": "verified"
+        "source": "verified",
+        "openNow": True,
     },
 
     {
@@ -62,7 +67,8 @@ resources = [
         "hours": "Mon-Sat 07:30-15:00",
         "contact": "01 872 0770",
         "description": "Breakfast, lunch and food parcels for people experiencing homelessness or food poverty",
-        "source": "verified"
+        "source": "verified",
+        "openNow": True,
     },
 
     {
@@ -72,7 +78,8 @@ resources = [
         "hours": "Mon-Sat",
         "contact": "01 872 0770",
         "description": "Showers, clothing and hygiene support",
-        "source": "verified"
+        "source": "verified",
+        "openNow": True,
     },
 
     {
@@ -82,7 +89,8 @@ resources = [
         "hours": "Mon-Sat",
         "contact": "01 872 0770",
         "description": "Medical, family and homelessness support services",
-        "source": "verified"
+        "source": "verified",
+        "openNow": True,
     },
 
     {
@@ -92,7 +100,8 @@ resources = [
         "hours": "Mon-Fri 08:30-22:30, Sun 09:30-14:30 and 17:30-22:30",
         "contact": "01 677 3308",
         "description": "Free meals and daytime support for people experiencing homelessness",
-        "source": "verified"
+        "source": "verified",
+        "openNow": True,
     },
 
     {
@@ -102,7 +111,8 @@ resources = [
         "hours": "Mon-Fri 08:30-22:30, Sun 09:30-14:30 and 17:30-22:30",
         "contact": "01 677 3308",
         "description": "Showers, laundry, toiletries and clean clothing",
-        "source": "verified"
+        "source": "verified",
+        "openNow": True,
     },
 
     {
@@ -112,7 +122,8 @@ resources = [
         "hours": "Mon-Fri 08:30-22:30, Sun 09:30-14:30 and 17:30-22:30",
         "contact": "01 677 3308",
         "description": "Wi-Fi and phone charging facilities",
-        "source": "verified"
+        "source": "verified",
+        "openNow": True,
     },
 
     {
@@ -122,7 +133,8 @@ resources = [
         "hours": "Mon-Fri 12:00",
         "contact": "01 453 6621",
         "description": "Warm meals for people in need",
-        "source": "verified"
+        "source": "verified",
+        "openNow": True,
     },
 
     {
@@ -132,7 +144,8 @@ resources = [
         "hours": "Mon-Fri from 08:00",
         "contact": "01 855 5577",
         "description": "Affordable meals and food poverty support",
-        "source": "verified"
+        "source": "verified",
+        "openNow": True,
     },
 
     {
@@ -142,7 +155,8 @@ resources = [
         "hours": "Mon-Fri",
         "contact": "01 891 3022",
         "description": "Emergency food provision and food poverty support",
-        "source": "verified"
+        "source": "verified",
+        "openNow": True,
     },
 
     {
@@ -152,7 +166,8 @@ resources = [
         "hours": "Mon-Fri 10:00-12:00 and 14:00-16:00",
         "contact": "1800 707 707",
         "description": "Assessment and access point for emergency homeless accommodation",
-        "source": "verified"
+        "source": "verified",
+        "openNow": True,
     },
 
     {
@@ -162,7 +177,8 @@ resources = [
         "hours": "Mon-Fri 10:00-12:00 and 14:00-16:00",
         "contact": "1800 707 707",
         "description": "Homelessness assessment, information and accommodation support",
-        "source": "verified"
+        "source": "verified",
+        "openNow": True,
     },
 
     {
@@ -172,7 +188,8 @@ resources = [
         "hours": "Open daily",
         "contact": "01 671 2555",
         "description": "Food, coffee, advice and support for people experiencing homelessness",
-        "source": "verified"
+        "source": "verified",
+        "openNow": True,
     },
 
     {
@@ -182,7 +199,8 @@ resources = [
         "hours": "Open daily",
         "contact": "01 671 2555",
         "description": "Advice and information on housing, welfare and homelessness",
-        "source": "verified"
+        "source": "verified",
+        "openNow": True,
     },
 
     {
@@ -192,7 +210,8 @@ resources = [
         "hours": "Mon-Fri 09:00-17:00",
         "contact": "01 473 8300",
         "description": "Housing and support services for people who have experienced homelessness",
-        "source": "verified"
+        "source": "verified",
+        "openNow": True,
     },
 
     {
@@ -202,7 +221,8 @@ resources = [
         "hours": "24/7",
         "contact": "01 454 0182",
         "description": "Homeless accommodation with meals, bathrooms, laundry and internet access",
-        "source": "verified"
+        "source": "verified",
+        "openNow": True,
     },
 
     {
@@ -212,7 +232,8 @@ resources = [
         "hours": "Contact service for availability",
         "contact": "01 552 3111",
         "description": "Emergency homeless accommodation and support services",
-        "source": "verified"
+        "source": "verified",
+        "openNow": True,
     },
 
     {
@@ -222,7 +243,8 @@ resources = [
         "hours": "Contact service for availability",
         "contact": "01 454 2181",
         "description": "Short-term accommodation for adults experiencing homelessness",
-        "source": "verified"
+        "source": "verified",
+        "openNow": True,
     },
 
     {
@@ -232,7 +254,8 @@ resources = [
         "hours": "Contact service for availability",
         "contact": "",
         "description": "Homeless accommodation service in the Smithfield area",
-        "source": "verified"
+        "source": "verified",
+        "openNow": True,
     },
 
     {
@@ -242,7 +265,8 @@ resources = [
         "hours": "Varies by day",
         "contact": "089 707 8166",
         "description": "Food and support service for people experiencing homelessness",
-        "source": "verified"
+        "source": "verified",
+        "openNow": True,
     },
 
     {
@@ -252,7 +276,8 @@ resources = [
         "hours": "Varies by day",
         "contact": "01 864 4990",
         "description": "Food assistance and homeless support services",
-        "source": "verified"
+        "source": "verified",
+        "openNow": True,
     },
 
     {
@@ -262,7 +287,8 @@ resources = [
         "hours": "Mon-Thu 08:30-16:00, Fri 08:30-15:00",
         "contact": "01 531 3478",
         "description": "Redistributes surplus food to charities and community organisations",
-        "source": "verified"
+        "source": "verified",
+        "openNow": True,
     },
 
     {
@@ -272,7 +298,8 @@ resources = [
         "hours": "Mon-Thu 09:00-17:00, Fri 09:00-16:00",
         "contact": "01 539 2400",
         "description": "Advice and homelessness support for families",
-        "source": "verified"
+        "source": "verified",
+        "openNow": True,
     },
 
     {
@@ -282,7 +309,8 @@ resources = [
         "hours": "Varies by day",
         "contact": "01 222 8333",
         "description": "Public indoor space with Wi-Fi and internet access",
-        "source": "verified"
+        "source": "verified",
+        "openNow": True,
     },
     {
         "name": "Drumcondra Library",
@@ -291,7 +319,8 @@ resources = [
         "hours": "Varies by day",
         "contact": "01 222 8344",
         "description": "Public library with Wi-Fi and indoor facilities",
-        "source": "verified"
+        "source": "verified",
+        "openNow": True,
     },
 
     {

@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from 'react'
+import { useCallback, useEffect, useRef, useState } from 'react'
 import { MapContainer, useMap } from 'react-leaflet'
 import { MapTiles } from './MapTiles'
 import { AddResourceForm } from './AddResourceForm'
@@ -10,6 +10,7 @@ import { getKioskConfig } from './kiosk'
 import { ResourceDetail } from './ResourceDetail'
 import { ResourceListItem } from './ResourceListItem'
 import { MapLegend } from './MapLegend'
+import { MapResize } from './MapResize'
 import { ResourceMarker } from './ResourceMarker'
 import { YouAreHereMarker } from './YouAreHereMarker'
 import {
@@ -51,6 +52,7 @@ function App() {
   const [selected, setSelected] = useState<Resource | null>(null)
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState<string | null>(null)
+  const sidebarRef = useRef<HTMLElement>(null)
 
   useEffect(() => {
     if (kiosk.enabled) {
@@ -164,7 +166,7 @@ function App() {
         </main>
       ) : (
         <>
-          <aside className="sidebar">
+          <aside className="sidebar" ref={sidebarRef}>
             {view === 'add' ? (
               <section className="panel panel-add">
                 <h2>Add community resource</h2>
@@ -270,7 +272,10 @@ function App() {
                 </section>
 
                 {selectedVisible && (
-                  <ResourceDetail resource={selectedVisible} />
+                  <ResourceDetail
+                    resource={selectedVisible}
+                    scrollRoot={sidebarRef}
+                  />
                 )}
               </>
             )}
@@ -283,6 +288,7 @@ function App() {
               className="map"
             >
               <MapTiles />
+              <MapResize watch={`${view}-${selected?.id ?? 'none'}`} />
               {view === 'map' && (
                 <>
                   <Recenter lat={position.lat} lng={position.lng} />

@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, type RefObject } from 'react'
 import { ReportActions } from './ReportActions'
 import { CATEGORY_META, type Resource } from './types'
 
@@ -8,14 +8,32 @@ function formatDistance(m?: number) {
   return `${(m / 1000).toFixed(1)} km`
 }
 
-export function ResourceDetail({ resource }: { resource: Resource }) {
+export function ResourceDetail({
+  resource,
+  scrollRoot,
+}: {
+  resource: Resource
+  scrollRoot?: RefObject<HTMLElement | null>
+}) {
   const dist = formatDistance(resource.distanceMeters)
   const ref = useRef<HTMLElement>(null)
   const meta = CATEGORY_META[resource.category]
 
   useEffect(() => {
-    ref.current?.scrollIntoView({ behavior: 'smooth', block: 'nearest' })
-  }, [resource.id])
+    const panel = ref.current
+    const root = scrollRoot?.current
+    if (!panel || !root) return
+    const panelTop = panel.offsetTop
+    const panelBottom = panelTop + panel.offsetHeight
+    const viewTop = root.scrollTop
+    const viewBottom = viewTop + root.clientHeight
+    if (panelTop < viewTop || panelBottom > viewBottom) {
+      root.scrollTo({
+        top: Math.max(0, panelTop - 24),
+        behavior: 'smooth',
+      })
+    }
+  }, [resource.id, scrollRoot])
 
   return (
     <section
