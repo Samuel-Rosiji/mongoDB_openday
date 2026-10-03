@@ -21,9 +21,19 @@ db = client["caremap"]
 
 app = FastAPI(title="CareMap Dublin API")
 
+_extra_origins = [
+    o.strip()
+    for o in (os.getenv("CORS_ORIGINS") or "").split(",")
+    if o.strip()
+]
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173", "http://127.0.0.1:5173", "*"],
+    allow_origins=[
+        "http://localhost:5173",
+        "http://127.0.0.1:5173",
+        *_extra_origins,
+    ],
+    allow_origin_regex=r"https://.*\.vercel\.app",
     allow_methods=["*"],
     allow_headers=["*"],
 )
