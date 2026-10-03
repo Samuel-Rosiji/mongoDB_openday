@@ -1,0 +1,28 @@
+{
+  "items": [
+    {
+      "id": "mock-1",
+      "name": "Capuchin Day Centre",
+      "category": "food",
+      "description": "Meals and support services.",
+      "contact": "+353 1 872 0770",
+      "hours": "Mon–Fri 08:00–16:00",
+      "openNow": true,
+      "source": "verified",
+      "location": { "type": "Point", "coordinates": [-6.262, 53.352] },
+      "distanceMeters": 412
+    },
+    {
+      "id": "mock-2",
+      "name": "Sample Hygiene Hub",
+      "category": "hygiene",
+      "description": "Showers and toiletries.",
+      "contact": "",
+      "hours": "Daily 09:00–17:00",
+      "openNow": true,
+      "source": "community",
+      "location": { "type": "Point", "coordinates": [-6.258, 53.348] },
+      "distanceMeters": 890
+    }
+  ]
+}
