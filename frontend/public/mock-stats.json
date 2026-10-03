@@ -1,0 +1,13 @@
+{
+  "totalResources": 18,
+  "verified": 10,
+  "community": 8,
+  "byCategory": {
+    "food": 6,
+    "hygiene": 4,
+    "shelter": 3,
+    "wifi": 2,
+    "social": 3
+  },
+  "pendingReports": 2
+}
